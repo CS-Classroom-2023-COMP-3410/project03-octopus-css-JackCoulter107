@@ -4,28 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>The Fascinating World of Octopuses</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <div id="header">
+    <!-- Header Bubble -->
+    <div class="header-bubble">
         <h1>The Fascinating World of Octopuses</h1>
-        <p>Welcome to this intriguing corner of the internet!</p>
+        <p class="header-subtext">Welcome to this intriguing corner of the internet!</p>
     </div>
 
-    <!-- Main Content -->
-    <div id="main-content">
-
-        <!-- Introduction -->
-        <h2>Introduction</h2>
+    <!-- Main Content Bubble -->
+    <div class="content-bubble">
+        <!-- Introduction Section -->
+        <h2 class="serif">INTRODUCTION</h2>
         <p>
-            Octopuses are among the most fascinating creatures in the ocean.
-            They are known for their intelligence and remarkable adaptability.
+            Octopuses are among the most fascinating creatures in the ocean. They are known for their intelligence and
+            remarkable adaptability.
         </p>
 
         <!-- Amazing Facts -->
-        <h3>Amazing Facts</h3>
-        <!-- Unordered list -->
+        <h3 class="serif">AMAZING FACTS</h3>
         <ul>
             <li>They have three hearts.</li>
             <li>They can change color.</li>
@@ -33,55 +32,44 @@
         </ul>
 
         <!-- Anatomy -->
-        <h4>Anatomy</h4>
+        <h3 class="serif">Anatomy</h3>
         <p>
-            An octopus's anatomy is as unique as it is fascinating.
-            The <span class="important">mantle</span>, for example, helps in respiration and jet propulsion.
+            An octopus's anatomy is as unique as it is fascinating. The <span class="highlight">mantle</span>, for
+            example, helps in respiration and jet propulsion.
         </p>
 
-        <!-- Comparison with other Cephalopods -->
-        <h5>Comparison with Other Cephalopods</h5>
-        <!-- Ordered list -->
+        <!-- Comparison with Other Cephalopods -->
+        <h3 class="serif">Comparison with Other Cephalopods</h3>
         <ol>
             <li>Squid</li>
             <li>Cuttlefish</li>
             <li>Nautilus</li>
         </ol>
 
-        <!-- External Resources -->
-        <h6>External Resources</h6>
-        <p>
-            For more information, visit these websites:
-            <a href="https://www.oceana.org/" target="_blank">Oceana</a> |
-            <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
-        </p>
+        <!-- Quiz Bubble -->
+        <div class="quiz-bubble">
+            <h2 class="serif">OCTOPUS QUIZ</h2>
+            <div id="quiz-section">
+                <img src="octopus-image.png" alt="Image of an octopus">
+                <div class="quiz-content">
+                    <form action="/submit-quiz" method="POST">
+                        <label class="serif" for="question1">How many hearts does an octopus have?</label>
+                        <input type="text" id="question1" name="question1"><br>
 
-        <!-- Fun Experiment: Octopus Quiz -->
-        <div id="quiz-section">
+                        <label class="serif" for="question2">Can octopuses change color? (Yes/No)</label>
+                        <input type="text" id="question2" name="question2"><br>
 
-            <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
-
-            <h2>Octopus Quiz</h2>
-            <form action="/submit-quiz" method="POST">
-                <!-- Question 1 -->
-                <label for="question1">How many hearts does an octopus have?</label>
-                <input type="text" id="question1" name="question1"><br>
-
-                <!-- Question 2 -->
-                <label for="question2">Can octopuses change color? (Yes/No)</label>
-                <input type="text" id="question2" name="question2"><br>
-
-                <input type="submit" value="Submit Quiz">
-            </form>
+                        <input type="submit" value="Submit Quiz">
+                    </form>
+                </div>
+            </div>
         </div>
+    </div>
 
-    </div> <!-- End of main-content -->
-
-    <!-- Table -->
+    <!-- Common Octopus Species Table -->
     <div id="species-table">
-        <h2>Common Octopus Species</h2>
-        <table border="1">
+        <h2 class="serif">Common Octopus Species</h2>
+        <table>
             <tr>
                 <th>Species</th>
                 <th>Location</th>
@@ -100,15 +88,10 @@
         </table>
     </div>
 
-    <!-- Footer -->
-    <div id="footer">
-        <p>
-            &copy; 2023 The Fascinating World of Octopuses. All rights reserved.
-            <!-- HTML entities for special characters -->
-            Fun Fact: The plural of "Octopus" can be both "Octopuses" &amp; "Octopi" &lt;3
-        </p>
+    <!-- Footer Bubble -->
+    <div class="footer-bubble">
+        <p>&copy; 2023 The Fascinating World of Octopuses. All rights reserved. Fun Fact: The plural of "Octopus" can be both "Octopuses" & "Octopi" &lt;3</p>
     </div>
-
 </body>
 
 </html>
